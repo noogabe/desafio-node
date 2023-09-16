@@ -2,8 +2,9 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
-RUN npm install express --save \
-    && npm install mysql --save
+COPY . .
+
+RUN npm install
 
 ENV DOCKERIZE_VERSION v0.7.0
 
