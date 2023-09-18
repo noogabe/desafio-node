@@ -2,10 +2,6 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
-COPY package.json .
-
-RUN npm install
-
 ENV DOCKERIZE_VERSION v0.7.0
 
 RUN apt-get update \
